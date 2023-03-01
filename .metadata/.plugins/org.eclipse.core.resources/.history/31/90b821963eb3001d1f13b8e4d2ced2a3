@@ -1,0 +1,30 @@
+package com.te.demo.prac;
+
+public class ImmutableClass {
+	private int i;
+
+	public ImmutableClass(int i) {
+		this.i = i;
+	}
+
+	@Override
+	public String toString() {
+		return "ImmutableClass [i=" + i + "]";
+	}
+
+	public ImmutableClass append(int i) {
+		if (this.i == i) {
+			return this;
+		} else {
+			return new ImmutableClass(i);
+		}
+	}
+
+	public static void main(String[] args) {
+		ImmutableClass class1 = new ImmutableClass(10);
+		ImmutableClass class2 = class1.append(10);
+		System.out.println(class1.hashCode());
+		System.out.println(class2.hashCode());
+	}
+
+}

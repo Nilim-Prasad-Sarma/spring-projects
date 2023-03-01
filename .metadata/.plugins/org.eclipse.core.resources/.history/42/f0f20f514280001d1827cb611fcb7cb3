@@ -1,0 +1,26 @@
+package com.te.javabasics.ellow.ai.prac;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class SortingHashMapAccordingToValues {
+	public static void main(String[] args) {
+		HashMap<Integer, String> hashMap = new HashMap<Integer, String>();
+		hashMap.put(100, "nilim");
+		hashMap.put(200, "vinay");
+		hashMap.put(300, "alom");
+		hashMap.put(400, "akram");
+
+		TreeMap<String, Integer> treeMap = new TreeMap<String, Integer>();
+
+		for (Entry<Integer, String> entry : hashMap.entrySet()) {
+			treeMap.put(entry.getValue(), entry.getKey());
+		}
+
+		for (Entry<String, Integer> entry : treeMap.entrySet()) {
+			System.out.println(entry);
+		}
+
+	}
+}

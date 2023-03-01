@@ -1,0 +1,12 @@
+package com.te.demo.prac;
+
+public final class Student {
+	private final int id;
+	private final String name;
+
+	public Student(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+}

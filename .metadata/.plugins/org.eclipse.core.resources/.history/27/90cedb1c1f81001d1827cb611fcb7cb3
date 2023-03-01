@@ -1,0 +1,9 @@
+package com.te.demo;
+
+public class NonRepeatingChar {
+public static void main(String[] args) {
+	String input = "software technologies";
+	String[] split = input.split(" ");
+	System.out.println(split);
+}
+}

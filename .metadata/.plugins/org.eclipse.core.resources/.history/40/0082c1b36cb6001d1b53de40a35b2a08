@@ -1,0 +1,20 @@
+package com.interview;
+
+import java.util.HashMap;
+
+public class OccurenceOfString {
+	public static <V> void main(String[] args) {
+		String string = "I am am a java java developer";
+		int count = 1;
+		String[] words = string.split(" ");
+		HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+		for (String string2 : words) {
+			if (!hashMap.containsKey(string2)) {
+				hashMap.put(string2, count);
+			} else {
+				hashMap.put(string2, count + 1);
+			}
+		}
+
+	}
+}

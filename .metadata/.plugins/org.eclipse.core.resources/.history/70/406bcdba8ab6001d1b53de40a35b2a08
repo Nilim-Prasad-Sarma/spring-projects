@@ -1,0 +1,18 @@
+package com.interview;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class JavaFeatures {
+	public static void main(String[] args) {
+		ArrayList<Employee> arrayList = new ArrayList<Employee>();
+		arrayList.add(new Employee("Nilim", 20000));
+		arrayList.add(new Employee("Taher", 30000));
+		arrayList.add(new Employee("Rohan", 10000));
+
+		List<Integer> collect = arrayList.stream().map(Employee::getSalary).collect(Collectors.toList()));
+		System.out.println(collect);
+
+	}
+}

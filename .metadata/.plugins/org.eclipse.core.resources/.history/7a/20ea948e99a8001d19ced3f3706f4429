@@ -1,0 +1,13 @@
+package com.te.javabasics.interview;
+
+public class FindDuplicatesInAString {
+	public static void main(String[] args) {
+		String s1 = "aabbccdef";
+		char[] charArray = s1.toCharArray();
+		for (int i = 0; i <= charArray.length; i++) {
+			if (charArray[i] == charArray[i + 1]) {
+				System.out.println(charArray[i]);
+			}
+		}
+	}
+}

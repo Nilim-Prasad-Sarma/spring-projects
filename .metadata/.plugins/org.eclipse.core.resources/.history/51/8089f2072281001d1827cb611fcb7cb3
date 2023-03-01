@@ -1,0 +1,23 @@
+package com.te.demo;
+
+public class NonRepeatingChar {
+	public static void main(String[] args) {
+		String input = "software technologies";
+		char second = 0;
+		for (int i = 0; i < input.length(); i++) {
+			char first = input.charAt(i);
+			for (int j = i + 1; j < input.length(); j++) {
+				second = input.charAt(j);
+				if(first != second) {
+					continue;
+				}else {
+					break;
+				}
+			}
+			
+		}
+		System.out.println(second+ "");
+		
+		
+	}
+}

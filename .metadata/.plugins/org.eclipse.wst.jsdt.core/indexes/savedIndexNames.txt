@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\JavaUplift-19-OCT workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2968372416.index
+389289234.index
+287702027.index
+4161283052.index
+477472070.index
+3373234010.index

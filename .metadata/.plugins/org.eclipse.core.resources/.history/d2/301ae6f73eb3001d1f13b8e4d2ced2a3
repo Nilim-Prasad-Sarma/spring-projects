@@ -1,0 +1,6 @@
+package com.te.demo.prac;
+
+public class Address {
+	private String hNo;
+	private String city;
+}

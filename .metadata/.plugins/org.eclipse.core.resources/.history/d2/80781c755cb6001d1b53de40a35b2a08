@@ -1,0 +1,15 @@
+package com.interview;
+
+public class ArmstrongNumber {
+	public static void main(String[] args) {
+		int no = 153;
+		int temp = no;
+		int length = 0;
+
+		while (temp != 0) {
+			temp = temp / 10;
+			length = length + 1;
+		}
+
+	}
+}

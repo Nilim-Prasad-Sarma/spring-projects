@@ -1,0 +1,23 @@
+package com.interview;
+
+import java.util.Scanner;
+
+public class FibonacciSeries {
+	public static void main(String[] args) {
+		int a = 0;
+		int b = 1;
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the range: ");
+		int range = scanner.nextInt();
+		int result = 0;
+
+		for (int i = 0; i < range; i++) {
+			System.out.print("Number are " + a + " " + b);
+			result = a + b;
+			System.out.print(", " + result);
+			a = b;
+			b = result;
+		}
+	}
+}

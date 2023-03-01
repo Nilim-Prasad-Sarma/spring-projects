@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.te.springcore.pojo.Student" id="student"
+		autowire="constructor" >
+
+		<property name="studentId" value="100" />
+		<property name="studentName" value="John" />
+	</bean>
+	
+	<bean class="com.te.springcore.pojo.Address" id="ad" >
+		<property name="hno" value="201/A" />
+		<property name="street" value="7th cross" />
+		<property name="state" value="Karnataka" />
+	</bean>
+	
+	
+	<bean class="com.te.springcore.pojo.Address" id="address2" >
+		<property name="hno" value="201/B" />
+		<property name="street" value="7th cross" />
+		<property name="state" value="Karnataka" />
+	</bean>
+
+
+</beans>

@@ -1,0 +1,19 @@
+package com.te.javabasics.interview;
+
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class EmployeeDuplicateCount {
+	public static void main(String[] args) {
+		ArrayList<Employee> empList = new ArrayList<Employee>();
+		empList.add(new Employee("A1001", "Nilim", "HR"));
+		empList.add(new Employee("A1002", "Nilim", "Dev"));
+		empList.add(new Employee("A1003", "Rohan", "HR"));
+		empList.add(new Employee("A1004", "Pradeep", "HR"));
+
+		Map<String, Long> collect = empList.stream()
+				.collect(Collectors.groupingBy(Employee::getName, Collectors.counting()));
+		System.out.println(collect);
+	}
+}

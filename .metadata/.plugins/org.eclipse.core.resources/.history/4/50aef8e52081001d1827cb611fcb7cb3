@@ -1,0 +1,17 @@
+package com.te.demo;
+
+public class NonRepeatingChar {
+public static void main(String[] args) {
+	String input = "software technologies";
+	char[] charArray = input.toCharArray();
+	char ch = charArray[0];
+	int count = 0;
+	for (int i = 0; i < charArray.length; i++) {
+		if(ch!=charArray[i]) {
+			this.count ++;
+			break;
+		}
+		
+	}
+}
+}

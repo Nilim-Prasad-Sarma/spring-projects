@@ -1,0 +1,28 @@
+package com.interview;
+
+import java.util.ArrayList;
+
+public class Demo {
+	public static void main(String[] args) {
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		for (int i = 1000; i <= 3000; i++) {
+			arrayList.add(i);
+		}
+		int rem = 0;
+		int count = 0;
+		for (Integer integer : arrayList) {
+			while (integer != 0) {
+				rem = integer % 10;
+				if (rem % 2 == 0) {
+					System.out.println(integer + ",");
+					count = count + 1;
+					break;
+				}
+				if (count >= 1) {
+					break;
+				}
+			}
+			count = 0;
+		}
+	}
+}

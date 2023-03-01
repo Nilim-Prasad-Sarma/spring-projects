@@ -1,0 +1,25 @@
+package com.interview;
+
+import java.util.HashMap;
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class SortHashMapByValues {
+	public static void main(String[] args) {
+		HashMap<String, Integer> employeeDetails = new HashMap<String, Integer>();
+		employeeDetails.put("John", 300);
+		employeeDetails.put("Susan", 100);
+		employeeDetails.put("Vishal", 200);
+		employeeDetails.put("Nilim", 400);
+		employeeDetails.put("David", 500);
+
+		TreeMap<Integer, String> employeeDetailsSortedByValues = new TreeMap<Integer, String>();
+		for (Entry<String, Integer> entry : employeeDetails.entrySet()) {
+			employeeDetailsSortedByValues.put(entry.getValue(), entry.getKey());
+		}
+
+		for (Entry<Integer, String> entry : employeeDetailsSortedByValues.entrySet()) {
+			System.out.println(entry);
+		}
+	}
+}

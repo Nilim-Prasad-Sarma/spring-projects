@@ -1,0 +1,34 @@
+package com.interview;
+
+public class ArraySort {
+	public static void main(String[] args) {
+
+		int a[] = { 67, 1, 23, 98, 34 };
+		for (int i = 0; i < a.length - 1; i++) {
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[i] > a[j]) {
+					int temp = a[j];
+					a[j] = a[i];
+					a[i] = temp;
+				}
+			}
+		}
+		for (int i = 0; i < a.length; i++) {
+			System.out.println(a[i]);
+		}
+		int arr[] = { 56, 98, 23, 12 };
+		int first_high = arr[0];
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i] < first_high) {
+				first_high = arr[i];
+			}
+		}
+		int second_high = arr[0];
+		for (int i = 0; i < a.length - 1; i++) {
+			if (arr[i] < first_high && second_high < first_high) {
+				second_high = arr[i];
+			}
+		}
+		System.out.println("Second highest :" + second_high);
+	}
+}

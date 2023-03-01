@@ -1,0 +1,17 @@
+package com.te.demo;
+
+public class MovieTheatre {
+
+	private int noOfTickets = 50;
+
+	private MovieTheatre() {
+
+	}
+
+	public void bookTickets(int noOfTickets) {
+		System.out.println("Total no of seats: " + this.noOfTickets);
+		this.noOfTickets -= noOfTickets;
+		System.out.println("Seats available: " + this.noOfTickets);
+
+	}
+}

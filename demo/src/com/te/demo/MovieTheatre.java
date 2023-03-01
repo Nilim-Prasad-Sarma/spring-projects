@@ -1,0 +1,23 @@
+package com.te.demo;
+
+public class MovieTheatre {
+
+	private static int noOfTickets = 50;
+
+	private MovieTheatre() {
+
+	}
+
+	static MovieTheatre movieTheatre = null;
+
+	public static MovieTheatre bookTickets(int noOfTickets) {
+		System.out.println("Total no of seats: " + MovieTheatre.noOfTickets);
+		MovieTheatre.noOfTickets -= noOfTickets;
+		System.out.println("Seats available: " + MovieTheatre.noOfTickets);
+		if(MovieTheatre.movieTheatre == null) {
+			movieTheatre = new MovieTheatre();
+		}
+		return movieTheatre;
+
+	}
+}

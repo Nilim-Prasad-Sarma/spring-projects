@@ -1,0 +1,35 @@
+package com.interview;
+
+import java.util.ArrayList;
+
+public class JavaFeatures {
+	public static void main(String[] args) {
+//		ArrayList<Employee> arrayList = new ArrayList<Employee>();
+//		arrayList.add(new Employee("Nilim", 20000));
+//		arrayList.add(new Employee("Taher", 30000));
+//		arrayList.add(new Employee("Rohan", 10000));
+//
+//		List<Integer> collect = arrayList.stream().map(Employee::getSalary).collect(Collectors.toList());
+//		System.out.println(collect);
+		
+		ArrayList<Integer> arrayList2 = new ArrayList<Integer>();
+		arrayList2.add(10);
+		arrayList2.add(20);
+		
+		ArrayList<Integer> arrayList = new ArrayList<Integer>();
+		
+		arrayList.add(30);
+		arrayList.add(40);
+		
+		ArrayList<Object> arrayList3 = new ArrayList<>();
+		arrayList3.add(arrayList);
+		arrayList3.add(arrayList2);
+		
+		System.out.println(arrayList3);
+		
+		for (Object object : arrayList3) {
+			
+		}
+
+	}
+}

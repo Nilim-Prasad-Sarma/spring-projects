@@ -1,0 +1,27 @@
+package com.te.demo;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class FindNoOfOccurenceInAString {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the string");
+		String str = scanner.nextLine();
+		System.out.println(str);
+		 int initialLength = str.length();
+
+		Scanner scanner2 = new Scanner(System.in);
+		System.out.println("Enter the character you wish to find the occurence of: ");
+		String str1 = scanner2.nextLine();
+
+		str = str.replace(str1, "");
+		int newLength = str.length();
+
+		System.out.println(str1 + " has occured " + (initialLength - newLength) + " times");
+	
+		
+		
+	
+	}
+}
